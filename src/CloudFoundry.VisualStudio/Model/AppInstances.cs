@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Globalization;
     using System.Linq;
     using System.Net.Http;
     using System.Net.Http.Headers;
@@ -27,7 +28,7 @@
         {
             get 
             {
-                return "Instance " + this.instanceNumber;
+                return "Instance " + this.instanceNumber.ToString(CultureInfo.InvariantCulture);
             }
         }
 
